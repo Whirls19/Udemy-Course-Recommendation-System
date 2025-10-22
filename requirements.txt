@@ -3,4 +3,5 @@ numpy
 scikit-learn
 streamlit
 pyodbc
+psycopg2-binary
 plotly

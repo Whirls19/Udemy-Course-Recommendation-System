@@ -12,8 +12,6 @@ The fully interactive dashboard is live and accessible to everyone.
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://udemy-courses-recommendation-system.streamlit.app/)
 
-*(Remember to replace the URL above with your actual Streamlit app URL)*
-
 ## Key Features
 
 * **🚀 Live Interactive Dashboard:** A multi-page Streamlit application for exploring all project insights.
@@ -79,8 +77,8 @@ To clone and run this project on your own machine, follow these steps:
 
     ```toml
     # secrets.toml
-    DB_HOST = "aws-0-us-west-2.pooler.supabase.com"
-    DB_USER = "postgres.your-project-ref"
+    DB_HOST = "aws-1-ap-south-1.pooler.supabase.com"
+    DB_USER = "postgres.imarcyzsoqegmsthvika"
     DB_PORT = "5432"
     DB_NAME = "postgres"
     DB_PASSWORD = "Your-Database-Password"
@@ -88,7 +86,7 @@ To clone and run this project on your own machine, follow these steps:
 
 4.  **Install Dependencies**
     * Ensure you have Python 3.8+ installed.
-    * Install all required libraries from `requirements.txt`. (Ensure it uses `psycopg2-binary`, not `pyodbc`).
+    * Install all required libraries from `requirements.txt`.
     ```sh
     pip install -r requirements.txt
     ```

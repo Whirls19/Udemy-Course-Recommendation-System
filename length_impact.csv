@@ -1,0 +1,4 @@
+length_category,total_courses,avg_subscribers,avg_reviews,avg_review_rate,avg_price,avg_popularity
+Long,313,8034.0,786.0,0.093,115.53,0.0484
+Short,1441,2214.0,62.0,0.0603,47.5,0.022
+Medium,1924,3147.0,125.0,0.0682,71.89,0.0265

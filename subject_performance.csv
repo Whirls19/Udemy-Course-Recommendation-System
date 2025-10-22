@@ -1,0 +1,5 @@
+subject,total_courses,avg_price,avg_subscribers,avg_reviews,avg_review_rate,avg_duration,total_subscribers,avg_popularity,avg_quality
+Web Development,1200,77.03,6650.0,358.0,0.0541,5.59,7980572.0,0.03,0.0336
+Graphic Design,603,57.83,1763.0,61.0,0.0822,3.58,1063148.0,0.0279,0.0422
+Musical Instruments,680,49.56,1245.0,47.0,0.0682,2.85,846689.0,0.0228,0.035
+Business Finance,1195,68.55,1564.0,64.0,0.0723,3.55,1868711.0,0.0247,0.0373

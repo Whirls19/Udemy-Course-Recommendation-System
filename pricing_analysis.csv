@@ -1,0 +1,17 @@
+subject,price_category,course_count,avg_subscribers,avg_engagement,avg_price,avg_popularity
+Web Development,Budget,385,3369.0,0.0426,27.66,0.0188
+Graphic Design,Budget,343,927.0,0.0933,25.22,0.0297
+Graphic Design,Premium,118,2841.0,0.0772,160.0,0.0285
+Web Development,Premium,380,7762.0,0.0699,161.99,0.0398
+Musical Instruments,Budget,334,437.0,0.0705,29.21,0.0219
+Business Finance,Budget,504,859.0,0.0766,25.5,0.0245
+Musical Instruments,Premium,65,3338.0,0.0965,151.92,0.0364
+Business Finance,Free,96,6284.0,0.0325,0.0,0.0218
+Business Finance,Premium,293,1807.0,0.0687,170.44,0.0244
+Musical Instruments,Free,46,6625.0,0.0234,0.0,0.0185
+Web Development,Mid-Range,302,4475.0,0.059,67.0,0.0261
+Musical Instruments,Mid-Range,235,762.0,0.0659,59.87,0.0212
+Graphic Design,Free,35,8138.0,0.0373,0.0,0.0266
+Graphic Design,Mid-Range,107,1170.0,0.0665,68.6,0.0223
+Web Development,Free,133,17915.0,0.031,0.0,0.0434
+Business Finance,Mid-Range,302,1004.0,0.0814,63.34,0.0263

@@ -1,0 +1,9 @@
+course_type,subject,course_count,avg_subscribers,avg_reviews,avg_review_rate,avg_popularity
+Paid,Graphic Design,568,1370.0,47.0,0.0849,0.028
+Paid,Musical Instruments,634,855.0,39.0,0.0715,0.0231
+Free,Web Development,133,17915.0,680.0,0.031,0.0434
+Free,Graphic Design,35,8138.0,302.0,0.0373,0.0266
+Paid,Business Finance,1099,1151.0,47.0,0.0758,0.025
+Paid,Web Development,1067,5246.0,318.0,0.0569,0.0284
+Free,Musical Instruments,46,6625.0,148.0,0.0234,0.0185
+Free,Business Finance,96,6284.0,251.0,0.0325,0.0218

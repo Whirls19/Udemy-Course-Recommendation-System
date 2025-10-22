@@ -1,7 +1,6 @@
-pandas
-numpy
-scikit-learn
 streamlit
-pyodbc
-psycopg2-binary
+pandas
 plotly
+scikit-learn
+psycopg2-binary
+SQLAlchemy

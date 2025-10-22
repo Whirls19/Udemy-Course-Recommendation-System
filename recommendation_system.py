@@ -1,9 +1,10 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import pyodbc
+import psycopg2
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+import re
 
 st.set_page_config(
     page_title="Udemy Course Intelligence",
@@ -13,15 +14,17 @@ st.set_page_config(
 
 @st.cache_resource
 def get_connection():
-    """Create SQL Server connection"""
-    server = 'localhost'
-    database = 'courses'
-    conn_str = f'DRIVER={{ODBC Driver 17 for SQL Server}};SERVER={server};DATABASE={database};Trusted_Connection=yes;'
-    return pyodbc.connect(conn_str)
+    """Create PostgreSQL connection using Streamlit Secrets"""
+    conn_string = (
+        f"postgresql://{st.secrets['DB_USER']}:{st.secrets['DB_PASSWORD']}"
+        f"@{st.secrets['DB_HOST']}:{st.secrets['DB_PORT']}/{st.secrets['DB_NAME']}"
+    )
+    conn = psycopg2.connect(conn_string)
+    return conn
 
 @st.cache_data
 def load_data():
-    """Load main course data from SQL Server"""
+    """Load main course data from PostgreSQL"""
     conn = get_connection()
     query = "SELECT * FROM udemy_courses"
     df = pd.read_sql_query(query, conn)
@@ -30,9 +33,11 @@ def load_data():
 
 @st.cache_data
 def load_sql_view(view_name):
-    """Load specific view from SQL Server"""
+    """Load specific view from PostgreSQL"""
     conn = get_connection()
-    query = f"SELECT * FROM {view_name}"
+    # Basic sanitization to prevent SQL injection
+    safe_view_name = "".join(c for c in view_name if c.isalnum() or c == '_')
+    query = f"SELECT * FROM {safe_view_name}"
     df = pd.read_sql_query(query, conn)
     conn.close()
     return df
